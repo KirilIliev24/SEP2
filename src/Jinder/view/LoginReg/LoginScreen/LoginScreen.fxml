@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0"
+      prefWidth="289.0" stylesheets="@loginCss.css" xmlns="http://javafx.com/javafx/10.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jinder.view.LoginReg.LoginScreen.LoginScreenView">
+    <children>
+        <ImageView fx:id="JinderLog" fitHeight="149.0" fitWidth="174.0" layoutX="57.0" layoutY="13.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/JinderLogin.png"/>
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="14.0" layoutY="177.0" prefHeight="40.0" prefWidth="38.0" styleClass="icons"
+               text="🙎‍♂️">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="14.0" layoutY="217.0" prefHeight="40.0" prefWidth="38.0" styleClass="icons"
+               text="🔒">
+            <font>
+                <Font size="26.0"/>
+            </font>
+        </Label>
+        <JFXTextField fx:id="usernameId" labelFloat="true" layoutX="54.0" layoutY="184.0" prefHeight="26.0"
+                      prefWidth="199.0" promptText="Username"/>
+        <JFXPasswordField fx:id="passId" labelFloat="true" layoutX="54.0" layoutY="224.0" prefHeight="26.0"
+                          prefWidth="199.0" promptText="Password"/>
+        <JFXButton buttonType="RAISED" layoutX="154.0" layoutY="264.0" onAction="#onLogin" prefHeight="32.0"
+                   prefWidth="89.0" styleClass="login-button" text="Log in"/>
+        <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="264.0" onAction="#onRegistrate" prefHeight="32.0"
+                   prefWidth="89.0" ripplerFill="BLACK" styleClass="login-button" text="Registrate"/>
+    </children>
+</Pane>

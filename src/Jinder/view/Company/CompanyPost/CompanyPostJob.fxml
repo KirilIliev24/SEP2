@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0"
+      prefWidth="480.0" stylesheets="@companyPostCss.css" xmlns="http://javafx.com/javafx/10.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jinder.view.Company.CompanyPost.CompanyPostJobView">
+    <children>
+        <Label layoutX="250.0" layoutY="50.0" text="Category:"/>
+        <Label layoutX="10.0" layoutY="50.0" prefHeight="17.0" prefWidth="94.0" text="Job name:"/>
+        <Label layoutX="10.0" layoutY="95.0" text="Job requirements:"/>
+        <Label layoutX="250.0" layoutY="95.0" text="Job description:"/>
+        <TextField fx:id="jobNameId" layoutX="10.0" layoutY="67.0" prefHeight="25.0" prefWidth="220.0"/>
+        <ChoiceBox fx:id="categories" layoutX="250.0" layoutY="67.0" prefHeight="25.0" prefWidth="220.0"/>
+        <TextArea fx:id="descriptionId" layoutX="250.0" layoutY="112.0" prefHeight="200.0" prefWidth="220.0"
+                  wrapText="true"/>
+        <TextArea fx:id="requirementsId" layoutX="10.0" layoutY="112.0" prefHeight="200.0" prefWidth="220.0"
+                  wrapText="true"/>
+        <Label layoutX="161.0" layoutY="5.0" prefHeight="47.0" prefWidth="158.0" text="Post a job">
+            <font>
+                <Font name="System Bold" size="32.0"/>
+            </font>
+        </Label>
+        <Button layoutX="400.0" layoutY="315.0" mnemonicParsing="false" onAction="#onPostJob" prefHeight="25.0"
+                prefWidth="70.0" styleClass="main-button" text="Post"/>
+    </children>
+</Pane>

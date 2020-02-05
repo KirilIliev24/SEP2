@@ -1,0 +1,51 @@
+* {
+    -fx-primary : #FFFDF1;
+    -fx-secondary: #FFEFCD;
+    -fx-primarytext: black;
+
+}
+.root {
+    -fx-background-color: -fx-primary;
+}
+.button{
+    -fx-text-fill: -fx-primarytext;
+}
+
+.main-button{
+    -fx-border-color: black;
+    -fx-background-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-width: 0.5;
+
+}
+.main-button:hover{
+    -fx-background-color: #FFE09E;
+}
+
+.title {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 40px;
+    -fx-font-weight: Bold;
+}
+
+.choices{
+    -fx-background-color: -fx-secondary;
+    -fx-font-size: 42px;
+    -fx-border-width: 0.3;
+    -fx-border-color: grey;
+}
+.choices:hover{
+    -fx-background-color: #FFE09E;
+}
+.message{
+    -fx-border-color: grey;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-width: 0.5;
+}
+.list{
+    -fx-border-color: grey;
+
+    -fx-border-width: 0.5;
+}

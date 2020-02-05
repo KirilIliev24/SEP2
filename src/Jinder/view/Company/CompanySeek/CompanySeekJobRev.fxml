@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@companySeekJobRevCss.css"
+      xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Jinder.view.Company.CompanySeek.CompanySeekJobRevView">
+    <children>
+        <Separator layoutX="-7.0" layoutY="47.0" prefHeight="0.0" prefWidth="600.0"/>
+        <Separator layoutX="110.0" layoutY="48.0" orientation="VERTICAL" prefHeight="320.0" prefWidth="0.0"/>
+        <Separator layoutX="487.0" layoutY="48.0" orientation="VERTICAL" prefHeight="320.0" prefWidth="0.0"/>
+        <Separator layoutY="368.0" prefHeight="3.0" prefWidth="600.0"/>
+        <TextArea fx:id="jobReviewId" editable="false" layoutX="111.0" layoutY="47.0" prefHeight="322.0"
+                  prefWidth="378.0" wrapText="true"/>
+        <JFXButton fx:id="reviewButton" layoutY="368.0" onAction="#openCompanySeek" prefHeight="34.0" prefWidth="600.0"
+                   styleClass="review">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </JFXButton>
+        <JFXComboBox fx:id="choiceBox" focusColor="TRANSPARENT" labelFloat="true" layoutX="9.0" layoutY="7.0"
+                     prefHeight="34.0" prefWidth="300.0" promptText="   Jobs" styleClass="jobs"
+                     unFocusColor="#4d4d4d00"/>
+        <ImageView fx:id="JinderLogo" fitHeight="44.0" fitWidth="170.0" layoutX="425.0" layoutY="2.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/JinderLogo.png"/>
+            </image>
+        </ImageView>
+        <JFXButton layoutX="319.0" layoutY="8.0" onAction="#compRevBackToMain" prefHeight="33.0" prefWidth="99.0"
+                   styleClass="main-button" text="Main menu">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </JFXButton>
+    </children>
+</Pane>

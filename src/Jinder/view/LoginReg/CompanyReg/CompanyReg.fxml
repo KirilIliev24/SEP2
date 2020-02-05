@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0"
+      prefWidth="575.0" stylesheets="@companyRegCss.css" xmlns="http://javafx.com/javafx/10.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jinder.view.LoginReg.CompanyReg.CompanyRegView">
+    <children>
+        <Label alignment="CENTER" layoutX="37.0" prefHeight="57.0" prefWidth="499.0" styleClass="title"
+               text="Company registration">
+            <font>
+                <Font name="System Bold" size="23.0"/>
+            </font>
+        </Label>
+        <Label layoutX="11.0" layoutY="73.0" prefHeight="17.0" prefWidth="118.0" styleClass="usual"
+               text="Company name:"/>
+        <Label layoutX="10.0" layoutY="104.0" prefHeight="17.0" prefWidth="134.0" styleClass="usual"
+               text="Company description:"/>
+        <Separator layoutX="-1.0" layoutY="59.0" prefHeight="0.0" prefWidth="575.0"/>
+        <TextField fx:id="companyNameId" layoutX="110.0" layoutY="69.0" prefHeight="25.0" prefWidth="453.0"/>
+        <TextArea fx:id="companyDescriptionId" layoutX="10.0" layoutY="121.0" prefHeight="238.0" prefWidth="553.0"
+                  wrapText="true"/>
+        <JFXButton layoutX="14.0" layoutY="363.0" onAction="#compRegBack" prefHeight="27.0" prefWidth="82.0"
+                   styleClass="main-button" text="Back"/>
+        <JFXButton layoutX="479.0" layoutY="363.0" onAction="#compRegistrate" prefHeight="27.0" prefWidth="82.0"
+                   styleClass="main-button" text="Registrate"/>
+    </children>
+</Pane>

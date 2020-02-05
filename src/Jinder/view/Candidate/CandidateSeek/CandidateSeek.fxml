@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" stylesheets="@candidateSeekCss.css" xmlns="http://javafx.com/javafx/10.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jinder.view.Candidate.CandidateSeek.CandidateSeekView">
+    <children>
+        <Separator layoutX="-7.0" layoutY="47.0" prefHeight="0.0" prefWidth="600.0"/>
+        <TextArea fx:id="jobDescriptionId" editable="false" layoutX="111.0" layoutY="47.0" prefHeight="353.0"
+                  prefWidth="378.0" wrapText="true"/>
+        <ImageView fx:id="JinderLogo" fitHeight="44.0" fitWidth="170.0" layoutX="425.0" layoutY="2.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/JinderLogo.png"/>
+            </image>
+        </ImageView>
+        <JFXButton layoutX="319.0" layoutY="8.0" onAction="#candSeekBackToMain" prefHeight="33.0" prefWidth="99.0"
+                   styleClass="main-button" text="Main menu">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </JFXButton>
+        <JFXComboBox fx:id="categories" focusColor="TRANSPARENT" labelFloat="true" layoutX="9.0" layoutY="7.0"
+                     prefHeight="34.0" prefWidth="300.0" promptText="   Categories" styleClass="categories"
+                     unFocusColor="TRANSPARENT"/>
+        <JFXButton layoutY="47.0" onAction="#onAccept" prefHeight="353.0" prefWidth="112.0" styleClass="choices"
+                   text=" ✓"/>
+        <JFXButton layoutX="488.0" layoutY="47.0" onAction="#onDecline" prefHeight="353.0" prefWidth="112.0"
+                   styleClass="choices" text="✘">
+            <font>
+                <Font size="47.0"/>
+            </font>
+        </JFXButton>
+    </children>
+</Pane>

@@ -1,0 +1,49 @@
+* {
+    -fx-primary : #FFFDF1;
+    -fx-secondary: #FFEFCD;
+    -fx-primarytext: black;
+
+}
+.root {
+    -fx-background-color: -fx-primary;
+}
+.button{
+    -fx-text-fill: -fx-primarytext;
+}
+
+.main-button{
+    -fx-border-color: black;
+    -fx-background-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-width: 0.5;
+
+}
+.main-button:hover{
+    -fx-background-color: #FFE09E;
+}
+
+.title {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 40px;
+    -fx-font-weight: Bold;
+}
+.jobs {
+    -fx-border-color: black;
+    -fx-background-color: -fx-secondary;
+    -fx-border-width: 0.3;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+.review{
+    -fx-background-color: -fx-secondary;
+    -fx-border-width: 0.3;
+    -fx-border-color: grey;
+    -fx-font-weight: Bold;
+}
+.review:hover{
+    -fx-background-color: #FFE09E;
+    -fx-font-size: 15px;
+}
+
+

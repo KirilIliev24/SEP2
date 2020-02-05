@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="575.0" stylesheets="@candidateRegCss.css"
+            xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Jinder.view.LoginReg.CandidateReg.CandidateRegView">
+    <children>
+        <Label layoutX="10.0" layoutY="57.0" prefHeight="17.0" prefWidth="81.0" styleClass="usual" text="Education:"/>
+        <Label layoutX="10.0" layoutY="217.0" prefHeight="17.0" prefWidth="81.0" styleClass="usual"
+               text="Experiences:"/>
+        <Label layoutX="293.0" layoutY="57.0" prefHeight="17.0" prefWidth="81.0" styleClass="usual" text="Skills:"/>
+        <Label layoutX="293.0" layoutY="217.0" prefHeight="18.0" prefWidth="98.0" styleClass="usual"
+               text="Software skills:"/>
+        <Label layoutX="293.0" layoutY="294.0" prefHeight="17.0" prefWidth="81.0" styleClass="usual" text="Licenses:"/>
+        <Label layoutX="10.0" layoutY="377.0" prefHeight="18.0" prefWidth="80.0" styleClass="usual" text="Comments:"/>
+        <ScrollPane layoutX="-282.0" layoutY="-151.0" prefHeight="200.0" prefWidth="200.0"/>
+        <Separator layoutY="43.0" prefHeight="17.0" prefWidth="575.0"/>
+        <Label alignment="CENTER" layoutX="38.0" prefHeight="17.0" prefWidth="499.0" styleClass="title"
+               text="Candidate registration">
+            <font>
+                <Font name="System Bold" size="23.0"/>
+            </font>
+        </Label>
+        <TextArea fx:id="educationId" layoutX="10.0" layoutY="75.0" prefHeight="135.0" prefWidth="272.0"
+                  wrapText="true"/>
+        <TextArea fx:id="experiencesId" layoutX="10.0" layoutY="235.0" prefHeight="135.0" prefWidth="272.0"
+                  wrapText="true"/>
+        <TextArea fx:id="skillsId" layoutX="293.0" layoutY="75.0" prefHeight="135.0" prefWidth="272.0" wrapText="true"/>
+        <TextArea fx:id="softSkillsId" layoutX="293.0" layoutY="235.0" prefHeight="59.0" prefWidth="272.0"
+                  wrapText="true"/>
+        <TextArea fx:id="licensesId" layoutX="293.0" layoutY="311.0" prefHeight="59.0" prefWidth="272.0"
+                  wrapText="true"/>
+        <TextArea fx:id="commentsId" layoutX="10.0" layoutY="395.0" prefHeight="70.0" prefWidth="554.0"
+                  wrapText="true"/>
+        <Label layoutX="73.0" layoutY="52.0" text="*" textFill="RED">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Label>
+        <Label layoutX="330.0" layoutY="52.0" text="*" textFill="RED">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Label>
+        <Label layoutX="85.0" layoutY="212.0" text="*" textFill="RED">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Label>
+        <JFXButton layoutX="14.0" layoutY="470.0" onAction="#candRegBack" prefHeight="27.0" prefWidth="80.0"
+                   styleClass="main-button" text="Back"/>
+        <JFXButton layoutX="478.0" layoutY="470.0" onAction="#candRegistrate" styleClass="main-button"
+                   text="Registration"/>
+    </children>
+</AnchorPane>

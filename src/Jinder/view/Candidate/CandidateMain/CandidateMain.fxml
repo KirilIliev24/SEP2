@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0"
+      prefWidth="706.0" styleClass="root" stylesheets="@candidateMainCss.css" xmlns="http://javafx.com/javafx/10.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jinder.view.Candidate.CandidateMain.CandidateMainView">
+    <children>
+        <Separator layoutX="186.0" orientation="VERTICAL" prefHeight="55.0" prefWidth="0.0"/>
+        <TextArea fx:id="chatArea" editable="false" layoutX="186.0" layoutY="54.0" prefHeight="324.0" prefWidth="519.0"
+                  scrollTop="10000.0" wrapText="true"/>
+        <ImageView fx:id="JinderLogo" fitHeight="55.0" fitWidth="170.0" layoutX="533.0" layoutY="6.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/JinderLogo.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="log2" fitHeight="64.0" fitWidth="64.0" layoutX="128.0" layoutY="-5.0"
+                   onMouseClicked="#handleLogout" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/log2.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="log1" fitHeight="64.0" fitWidth="64.0" layoutX="128.0" layoutY="-5.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../../images/log1.png"/>
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="anchor" layoutX="138.0" layoutY="5.0" onMouseClicked="#handleLogout"
+                    onMousePressed="#pressed" onMouseReleased="#released" prefHeight="45.0" prefWidth="45.0"/>
+        <JFXButton layoutX="14.0" layoutY="7.0" onAction="#candSeek" prefHeight="41.0" prefWidth="113.0"
+                   styleClass="main-button" text="SEEK">
+            <font>
+                <Font size="19.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="639.0" layoutY="382.0" onAction="#onSendMsgButton" prefHeight="27.0" prefWidth="64.0"
+                   styleClass="main-button" text="SEND"/>
+        <JFXTextField fx:id="newMessageField" focusColor="#57575700" layoutX="190.0" layoutY="382.0" prefHeight="27.0"
+                      prefWidth="446.0" styleClass="message" unFocusColor="#4d4d4d00">
+            <padding>
+                <Insets left="6.0" right="6.0"/>
+            </padding>
+        </JFXTextField>
+        <JFXListView fx:id="listOfCompanies" layoutY="54.0" prefHeight="355.0" prefWidth="188.0">
+            <styleClass>
+                <String fx:value="root"/>
+                <String fx:value="list"/>
+            </styleClass>
+        </JFXListView>
+    </children>
+</Pane>

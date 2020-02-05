@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="202.0"
+      prefWidth="523.0" stylesheets="@registrateCss.css" xmlns="http://javafx.com/javafx/10.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jinder.view.LoginReg.RegistrateNeutral.RegistrateNeutralView">
+    <children>
+        <Label alignment="CENTER" layoutX="120.0" prefHeight="55.0" prefWidth="295.0" styleClass="title"
+               text="Registration">
+            <font>
+                <Font size="40.0"/>
+            </font>
+        </Label>
+        <Label layoutX="10.0" layoutY="67.0" prefHeight="17.0" prefWidth="76.0" styleClass="usual" text="Username:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="10.0" layoutY="102.0" prefHeight="17.0" prefWidth="76.0" styleClass="usual" text="Password:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="10.0" layoutY="137.0" prefHeight="17.0" prefWidth="90.0" styleClass="usual"
+               text="Password rep.:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="10.0" layoutY="172.0" prefHeight="17.0" prefWidth="76.0" styleClass="usual" text="First name:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="267.0" layoutY="67.0" prefHeight="17.0" prefWidth="76.0" styleClass="usual" text="Last name:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="267.0" layoutY="102.0" styleClass="usual" text="Date of birth:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="267.0" layoutY="137.0" styleClass="usual" text="Category:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <JFXTextField fx:id="usernameId" layoutX="94.0" layoutY="55.0" prefHeight="25.0" prefWidth="160.0"/>
+        <JFXPasswordField fx:id="passwordId" layoutX="94.0" layoutY="90.0" prefHeight="25.0" prefWidth="160.0"/>
+        <JFXPasswordField fx:id="passwordRepId" layoutX="94.0" layoutY="125.0" prefHeight="25.0" prefWidth="160.0"/>
+        <JFXTextField fx:id="firstNameId" layoutX="94.0" layoutY="160.0" prefHeight="25.0" prefWidth="160.0"/>
+        <JFXTextField fx:id="lastNameId" layoutX="345.0" layoutY="55.0" prefHeight="25.0" prefWidth="160.0"/>
+        <JFXDatePicker fx:id="dobId" layoutX="345.0" layoutY="90.0" prefHeight="28.0" prefWidth="168.0"/>
+        <JFXButton layoutX="267.0" layoutY="166.0" onAction="#backToLogin" prefHeight="27.0" prefWidth="51.0"
+                   styleClass="main-button" text="Back"/>
+        <JFXButton layoutX="400.0" layoutY="166.0" onAction="#registrate" prefHeight="27.0" prefWidth="101.0"
+                   styleClass="main-button" text="Next"/>
+        <JFXRadioButton fx:id="choiceCompany" layoutX="342.0" layoutY="136.0" text="Company">
+            <toggleGroup>
+                <ToggleGroup fx:id="category"/>
+            </toggleGroup>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="choiceCandidate" layoutX="429.0" layoutY="136.0" text="Candidate"
+                        toggleGroup="$category"/>
+    </children>
+</Pane>
